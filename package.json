@@ -1,0 +1,97 @@
+{
+  "name": "learn-app",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "https://5a2f3b5fc096b1bcefb31e665784fbb6.crowdindia.co.in",
+  "dependencies": {
+    "@bumaga/tabs": "^0.2.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.6.0",
+    "copy-to-clipboard": "^3.3.1",
+    "create-react-class": "^15.6.3",
+    "crypto-js": "^4.0.0",
+    "datatables": "^1.10.18",
+    "datatables.net": "^1.10.22",
+    "datatables.net-dt": "^1.10.24",
+    "fs": "0.0.1-security",
+    "html-to-text": "^5.1.1",
+    "jquery": "^3.6.0",
+    "material-table": "^1.69.0",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "moment": "^2.29.1",
+    "moment-js": "^1.1.15",
+    "qrcode.react": "^1.0.0",
+    "query-string": "^6.13.2",
+    "react": "^16.13.1",
+    "react-awesome-modal": "^2.0.5",
+    "react-bar-chart": "^0.1.2",
+    "react-barcode": "^1.4.0",
+    "react-bootstrap": "^1.1.1",
+    "react-dom": "^16.13.1",
+    "react-fade-in": "^2.0.1",
+    "react-google-charts": "^3.0.15",
+    "react-hot-loader": "^4.12.21",
+    "react-icons": "^4.2.0",
+    "react-image-crop": "^8.6.4",
+    "react-image-select-pv": "^2.2.1",
+    "react-images-upload": "^1.2.8",
+    "react-js-loading-progress-bar": "^0.3.1",
+    "react-loading": "^2.0.3",
+    "react-loading-overlay": "^1.0.1",
+    "react-lottie": "^1.2.3",
+    "react-material-toast": "^16.1.7",
+    "react-moment": "^0.9.7",
+    "react-multi-carousel": "^2.5.5",
+    "react-paginate": "^6.5.0",
+    "react-redux": "^7.2.0",
+    "react-responsive-modal": "^6.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
+    "react-search-field": "^1.2.0",
+    "react-tabs": "^3.1.1",
+    "react-to-pdf": "0.0.13",
+    "react-to-print": "^2.10.3",
+    "react-toastify": "^7.0.3",
+    "react-transition-group": "^4.4.1",
+    "semantic-ui-react": "^0.88.2",
+    "simple-react-validator": "^1.5.0",
+    "sweetalert": "^2.1.2",
+    "sweetalert-react": "^0.4.11",
+    "uniqid": "^5.2.0",
+    "word-wrap": "^1.2.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "bable": {
+    "plugins": [
+      "react-hot-loader/babel"
+    ]
+  }
+}
