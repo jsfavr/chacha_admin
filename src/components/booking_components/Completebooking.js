@@ -90,26 +90,10 @@ export default class Completebooking extends Component {
                         <td>{obj.shippingAddress.name}</td>
                         <td>{obj.shippingAddress.phone}</td>
 
-                        <td>₹{obj.bookingDetails.productPayablePrice}<br />
-                            {
-                                obj.bookingDetails.walletPoint != 0 ?
-                                    <span className="badge badge-dark" style={{ float: "right" }}>Crowd Rewards</span>
-                                    :
-                                    null
-                            }
-                            {
-                                obj.bookingDetails.walletAmount != 0 ?
-                                    <span className="badge badge-info" style={{ float: "right" }}>Crowd Money</span>
-                                    :
-                                    null
-                            }
-
-                            {obj.bookingDetails.paymentType != 'wallet' ?
-                                <span className="badge badge-primary" style={{ float: "right" }}> {obj.bookingDetails.paymentType}</span>
-                                : null
-                            }
-
-
+                        <td>₹{obj.bookingDetails.productPayablePrice + obj.bookingDetails.deliveryCharge}<br />
+                            
+                            <span className="badge badge-primary" style={{ float: "right" }}> {obj.bookingDetails.paymentType}</span>
+                            
                         </td>
                         <td>
                             <Link to={"/Viewbooking?booking_id=" + obj.bookingDetails.OrderID + "&status=2"} className="btn btn-icon btn-sm btn-primary mt-1 mb-1" type="button">

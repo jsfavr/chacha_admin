@@ -352,11 +352,11 @@ export default class BookingDetails extends Component {
 
                                                                     {/* <td>{obj.productDetail.size}</td>
                                                             <td>{obj.productDetail.color}</td> */}
-                                                                    <td>&#8377;{Math.round(obj.productSellingPrice + obj.productGST)}</td>
+                                                                    <td>&#8377;{Math.round(obj.productSellingPrice)}</td>
 
                                                                     <td>{obj.qty}</td>
 
-                                                                    <td className="text-right">&#8377;{(Math.round(obj.productSellingPrice + obj.productGST)) * parseInt(obj.qty)}</td>
+                                                                    <td className="text-right">&#8377;{(Math.round(obj.productSellingPrice)) * parseInt(obj.qty)}</td>
 
 
                                                                     <td className="text-center">

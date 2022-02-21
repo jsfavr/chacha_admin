@@ -387,11 +387,11 @@ export default class Viewbooking extends Component {
 
                                                             {/* <td>{this.state.productDetail.size}</td>
                                                             <td>{this.state.productDetail.color}</td> */}
-                                                            <td>&#8377;{Math.round(this.state.bookingDetails.productSellingPrice + this.state.bookingDetails.productGST)}</td>
+                                                            <td>&#8377;{Math.round(this.state.bookingDetails.productSellingPrice)}</td>
 
                                                             <td>{this.state.bookingDetails.qty}</td>
 
-                                                            <td className="text-right">{(Math.round(this.state.bookingDetails.productSellingPrice + this.state.bookingDetails.productGST)) * parseInt(this.state.bookingDetails.qty)}</td>
+                                                            <td className="text-right">{(Math.round(this.state.bookingDetails.productSellingPrice)) * parseInt(this.state.bookingDetails.qty)}</td>
 
                                                             <td className="text-center">
                                                                 <Link to={"invoice?booking_id=" + this.state.get_id} className="btn btn-primary btn-sm">Invoice</Link>

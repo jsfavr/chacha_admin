@@ -89,25 +89,10 @@ export default class Cancelbooking extends Component {
                         <td>{obj.shippingAddress.name}</td>
                         <td>{obj.shippingAddress.phone}</td>
 
-                        <td>₹{obj.bookingDetails.productPayablePrice}<br />
-                            {
-                                obj.bookingDetails.walletPoint != 0 ?
-                                    <span className="badge badge-dark" style={{ float: "right" }}>Crowd Rewards</span>
-                                    :
-                                    null
-                            }
-                            {
-                                obj.bookingDetails.walletAmount != 0 ?
-                                    <span className="badge badge-info" style={{ float: "right" }}>Crowd Money</span>
-                                    :
-                                    null
-                            }
-
-                            {obj.bookingDetails.paymentType != 'wallet' ?
+                        <td>₹{obj.bookingDetails.productPayablePrice + obj.bookingDetails.deliveryCharge}<br />
+                        
                                 <span className="badge badge-primary" style={{ float: "right" }}> {obj.bookingDetails.paymentType}</span>
-                                : null
-                            }
-
+                           
 
                         </td>
                         <td>
