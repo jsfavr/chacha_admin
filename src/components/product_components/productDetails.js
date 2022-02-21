@@ -230,7 +230,7 @@ export default class productDetails extends Component {
                                 Review : <b>{this.state.details.avgReview}</b><br />
                                 Total Review : <b>{this.state.details.totalReview}</b><br />
                                 MRP : {this.state.details.mrp}<br />
-                                Selling Price : {Math.round(Number(this.state.details.sellingPrice) + (Number(this.state.details.sellingPrice) * this.state.sub_cat_details.gst) / 100)}({this.state.sub_cat_details.gst}% GST)<br />
+                                Selling Price : {Math.round(Number(this.state.details.sellingPrice))}({this.state.sub_cat_details.gst}% GST)<br />
                                 {/* <Link to={"updateProductDetails?id="+this.state.id} className="btn btn-icon btn-default mt-1 mb-1">
                                     <span className="btn-inner--icon"><i className="fe fe-edit"></i></span>
                                     <span className="btn-inner--text">Update</span>
@@ -378,7 +378,7 @@ export default class productDetails extends Component {
                                             <tr>
 
                                                 <td>₹ {this.state.details.mrp}</td>
-                                                <td>₹ {Math.round(Number(this.state.details.sellingPrice) + (Number(this.state.details.sellingPrice) * this.state.sub_cat_details.gst) / 100)}({this.state.sub_cat_details.gst}% GST)</td>
+                                                <td>₹ {Math.round(Number(this.state.details.sellingPrice))}({this.state.sub_cat_details.gst}% GST)</td>
                                                 <td>{this.state.details.totalStock}</td>
 
                                                 <td>{parseInt(this.state.details.totalStock) - parseInt(this.state.details.availableStock)}</td>
