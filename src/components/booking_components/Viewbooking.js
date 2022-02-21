@@ -582,7 +582,7 @@ export default class Viewbooking extends Component {
                                     </div>
                                     <div className="row">
                                         <div className="col-xl-4 col-12 offset-xl-8">
-                                            <p className="text-right mt-3 font-weight-600">Sub-total: ₹{(parseInt(this.state.bookingDetails.productSellingPrice) + parseInt(this.state.bookingDetails.productGST)) * parseInt(this.state.bookingDetails.qty)}</p>
+                                            <p className="text-right mt-3 font-weight-600">Sub-total: ₹{(parseInt(this.state.bookingDetails.productSellingPrice)) * parseInt(this.state.bookingDetails.qty)}</p>
                                             <p className="text-right mt-3 font-weight-600">Coupon Discount: ₹{parseInt(this.state.bookingDetails.couponDiscount)}</p>
                                             <p className="text-right mt-3 font-weight-600">Crowd Money: ₹{parseInt(this.state.bookingDetails.walletAmount)}</p>
                                             <p className="text-right mt-3 font-weight-600">Crowd Rewards: ₹{parseInt(this.state.bookingDetails.walletPoint)}</p>
