@@ -23,7 +23,7 @@ export default class updateCategory extends Component {
 
     
   componentDidMount() {
-    document.title = 'Update Category : Admin Dashboard - Crowd';
+    document.title = 'Update Category : Admin Dashboard - Hardwarechacha';
     document.getElementById("global-loader").style.display = "block";
     setTimeout(()=>{
         document.getElementById("global-loader").style.display = "none";

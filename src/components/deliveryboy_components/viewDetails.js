@@ -22,7 +22,7 @@ export default class viewDetails extends Component {
         }
       }
       componentDidMount() {
-        document.title = 'Delivery Boy Details : Admin Dashboard - Crowd';
+        document.title = 'Delivery Boy Details : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

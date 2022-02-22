@@ -21,7 +21,7 @@ export default class inventoryDetails extends Component {
         }
       }
       componentDidMount(){
-        document.title = 'Inventory Details : Admin Dashboard - Crowd';
+        document.title = 'Inventory Details : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

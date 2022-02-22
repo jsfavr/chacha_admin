@@ -19,7 +19,7 @@ export class returnDetails extends Component {
         }
     }
    componentDidMount(){
-    document.title = 'Return Details : Admin Dashboard - Crowd';
+    document.title = 'Return Details : Admin Dashboard - Hardwarechacha';
     document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

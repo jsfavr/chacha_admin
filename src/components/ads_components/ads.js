@@ -6,7 +6,7 @@ import Moment from 'moment-js';
 export default class ads extends Component {
     constructor(props) {
         super(props)
-        document.title = 'ADS : Admin Dashboard - Crowd';
+        document.title = 'ADS : Admin Dashboard - HardwareChacha';
         this.state = {
             content: [],
             offset: 0,

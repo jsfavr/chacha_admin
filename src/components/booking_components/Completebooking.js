@@ -20,7 +20,7 @@ export default class Completebooking extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'Complete Booking : Admin Dashboard - Crowd';
+        document.title = 'Complete Booking : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
         setTimeout(() => {
             document.getElementById("global-loader").style.display = "none";

@@ -10,7 +10,7 @@ export default class Bookinghistory extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'Booking History : Admin Dashboard - Crowd';
+        document.title = 'Booking History : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
         setTimeout(() => {
             document.getElementById("global-loader").style.display = "none";
@@ -94,14 +94,7 @@ export default class Bookinghistory extends Component {
                                                     Payble <br />
                                                  Price
                                              </th>
-                                                <th>
-                                                    Crowd <br />
-                                                 Money
-                                             </th>
-                                                <th>
-                                                    Crowd <br />
-                                                 Rewards
-                                             </th>
+                                               
                                                 <th>
                                                     Coupon <br />
                                                  Discount

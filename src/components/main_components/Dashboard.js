@@ -16,7 +16,7 @@ export default class Dashboard extends Component {
 		}
 	}
 componentDidMount() {
-		document.title = 'Admin Dashboard : Crowd';
+		document.title = 'Admin Dashboard : Hardwarechacha';
 		
 		document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{

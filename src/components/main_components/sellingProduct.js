@@ -22,7 +22,7 @@ export default class sellingProduct extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'Top Selling Product : Admin Dashboard - Crowd';
+        document.title = 'Top Selling Product : Admin Dashboard - Hardwarechacha';
         get("/product/AdminTopProduct/")
         .then((response) => {
            // console.log(response.data);

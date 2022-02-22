@@ -19,7 +19,7 @@ export default class mostView extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'Most Viewed Product : Admin Dashboard - Crowd';
+        document.title = 'Most Viewed Product : Admin Dashboard - Hardwarechacha';
         get("/product/AdminTopViewProduct/")
         .then((response) => {
             //console.log(response.data);

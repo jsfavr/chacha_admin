@@ -16,7 +16,7 @@ export default class Viewcoupon extends Component {
   }
   componentDidMount(){
 
-      document.title = 'View Coupon : Admin Dashboard - Crowd';
+      document.title = 'View Coupon : Admin Dashboard - Hardwarechacha';
       document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

@@ -16,7 +16,7 @@ export class viewPincode extends Component {
         }
     }
     componentDidMount(){
-      document.title = 'Pincode : Admin Dashboard - Crowd';
+      document.title = 'Pincode : Admin Dashboard - Hardwarechacha';
       document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

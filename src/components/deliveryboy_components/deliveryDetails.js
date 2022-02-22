@@ -24,7 +24,7 @@ export class deliveryDetails extends Component {
         }
     }
    componentDidMount(){
-    document.title = 'Delivery Details : Admin Dashboard - Crowd';
+    document.title = 'Delivery Details : Admin Dashboard - Hardwarechacha';
     document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

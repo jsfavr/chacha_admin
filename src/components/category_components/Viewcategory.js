@@ -18,7 +18,7 @@ export default class Viewcategory extends Component {
 }
 
   componentDidMount() {
-    document.title = 'Category : Admin Dashboard - Crowd';
+    document.title = 'Category : Admin Dashboard - Hardwarechacha';
     document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

@@ -16,7 +16,7 @@ export default class Addcoupon extends Component {
     }
   }
   componentDidMount() {
-    document.title = 'Add Coupon : Admin Dashboard - Crowd';
+    document.title = 'Add Coupon : Admin Dashboard - Hardwarechacha';
     document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

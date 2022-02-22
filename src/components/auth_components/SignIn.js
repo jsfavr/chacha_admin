@@ -124,7 +124,7 @@ export default class SignIn extends Component {
                                 phone_no: this.state.phone,
                                 // phone_no: '6294008510',
                                 // msg: 'Please use this OTP ' + this.state.sendOTP + ' for complete the login process in Crowd admin. Do not share it with anyone.',
-                                msg: 'Please use this OTP ' + this.state.sendOTP + ' for complete the Registration process on CWOWD. Never share this OTP with anyone.',
+                                msg: 'Please use this OTP ' + this.state.sendOTP + ' for complete the Registration process on Hardwarechacha. Never share this OTP with anyone.',
                                 template_id: '1207161779626782255'
 
                             }
@@ -207,7 +207,7 @@ export default class SignIn extends Component {
     }
 
     componentDidMount() {
-        document.title = 'Sign In : Admin Dashboard - Crowd';
+        document.title = 'Sign In : Admin Dashboard - Hardwarechacha';
     }
 
     render() {

@@ -33,7 +33,7 @@ export default class deliveryLbel extends Component {
 
     componentDidMount() {
         console.log('dasdsas')
-        document.title = 'Delivery Slip : Admin Dashboard - Crowd';
+        document.title = 'Delivery Slip : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
         setTimeout(() => {
             document.getElementById("global-loader").style.display = "none";
@@ -206,7 +206,7 @@ export default class deliveryLbel extends Component {
                         <center><ReactToPrint
                             trigger={() => <a href="javascript:void(0)" className="btn btn-primary" onClick={this.barcodePrint}>Print</a>}
                             content={() => this.componentRef}
-                            documentTitle='Crowd Delivery Slip'
+                            documentTitle='Hardwarechacha Delivery Slip'
                         /></center><br /><br />
                     </div>
                     <div className="col-md-3">

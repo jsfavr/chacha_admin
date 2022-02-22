@@ -16,7 +16,7 @@ export default class AddPincode extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'Add Pincode : Admin Dashboard - Crowd';
+        document.title = 'Add Pincode : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

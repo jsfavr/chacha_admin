@@ -34,7 +34,7 @@ export default class deliverySlip extends Component {
     }
     componentDidMount() {
         console.log('dasdsas')
-        document.title = 'Delivery Slip : Admin Dashboard - Crowd';
+        document.title = 'Delivery Slip : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
         setTimeout(() => {
             document.getElementById("global-loader").style.display = "none";
@@ -78,7 +78,7 @@ export default class deliverySlip extends Component {
                                         <div className="row" style={{ borderBottom: "solid 1px" }}>
                                             <div className="col-xs-2"></div>
                                             <div className="" style={{ borderLeft: "solid 1px", borderRight: "solid 1px", width: "75%", }}>
-                                                <div style={{ padding: "0px 10px" }}>CROWD Logistics</div>
+                                                <div style={{ padding: "0px 10px" }}>Hardware Logistics</div>
                                                 <div className="row" style={{ borderTop: "solid 1px", margin: 0, }}>
                                                     <div className="" style={{ borderRight: "solid 1px", fontSize: "11px", fontWeight: "800", width: "50%", padding: "5px 10px" }}>
 
@@ -178,7 +178,7 @@ export default class deliverySlip extends Component {
                                         </div>
                                         <div className="row">
                                             <div className="" style={{ borderBottom: "solid 1px", borderTop: "none", borderLeft: "none", width: "100%" }}>
-                                                <div style={{ marginLeft: "10px", fontSize: "14px" }}>Order Through : <img style={{ height: "20px" }} src="http://admin.localhost:8000/logo/OHMAGO%20Delivery%20Services%20Logo%20PNG.png" /> <b style={{ fontSize: "12px" }}>Crowd</b></div>
+                                                <div style={{ marginLeft: "10px", fontSize: "14px" }}>Order Through : HardwareChacha</div>
                                             </div>
                                         </div>
                                         <div className="row">
@@ -207,7 +207,7 @@ export default class deliverySlip extends Component {
                         <center><ReactToPrint
                             trigger={() => <a href="javascript:void(0)" className="btn btn-primary" onClick={this.barcodePrint}>Print</a>}
                             content={() => this.componentRef}
-                            documentTitle='Crowd Delivery Slip'
+                            documentTitle='Hardwarechacha Delivery Slip'
                         /></center><br /><br />
                     </div>
 

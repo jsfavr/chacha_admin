@@ -19,7 +19,7 @@ export default class review extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'Product Review : Admin Dashboard - Crowd';
+        document.title = 'Product Review : Admin Dashboard - Hardwarechacha';
         get("/other/AdminHighRatting/")
         .then((response) => {
             //console.log(response.data);

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class Categoryglance extends Component {
     componentDidMount(){
-        document.title = 'Category at a Glance : Admin Dashboard - Crowd';
+        document.title = 'Category at a Glance : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

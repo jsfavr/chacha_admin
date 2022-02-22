@@ -23,7 +23,7 @@ export default class SubSubCategoryAdd extends Component {
 
   
     handleSubmit = (e) => {
-        document.title = 'Add Sub Sub Category : Admin Dashboard - Crowd';
+        document.title = 'Add Sub Sub Category : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

@@ -28,7 +28,7 @@ export class addDeliveryBoy extends Component {
         this.validator = new SimpleReactValidator();
     }
     componentDidMount() {
-        document.title = 'Add Delivery Boy : Admin Dashboard - Crowd';
+        document.title = 'Add Delivery Boy : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

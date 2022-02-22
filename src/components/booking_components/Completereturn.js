@@ -19,7 +19,7 @@ export default class Completereturn extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'Complete Return Booking : Admin Dashboard - Crowd';
+        document.title = 'Complete Return Booking : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
         setTimeout(() => {
             document.getElementById("global-loader").style.display = "none";

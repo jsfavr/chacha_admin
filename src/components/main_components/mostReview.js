@@ -23,7 +23,7 @@ export default class mostReview extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'Most Reviewed Product : Admin Dashboard - Crowd';
+        document.title = 'Most Reviewed Product : Admin Dashboard - Hardwarechacha';
         get("/product/AdminTopReviewProduct/")
         .then((response) => {
            // console.log(response.data);

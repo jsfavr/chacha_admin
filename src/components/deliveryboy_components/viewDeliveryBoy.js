@@ -17,7 +17,7 @@ export class viewDeliveryBoy extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'Delivery Boy : Admin Dashboard - Crowd';
+        document.title = 'Delivery Boy : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
         setTimeout(() => {
             document.getElementById("global-loader").style.display = "none";
@@ -34,9 +34,9 @@ export class viewDeliveryBoy extends Component {
     }
     vendorstatusChange = (id, pra, number) => {
         if (pra == 0) {
-            var sms = "Approval Canceled : Sorry!! your delivery boy approval is canceled. For more details contact to the admin. Any query visit https://crowdindia.co.in/contact.html";
+            var sms = "Approval Canceled : Sorry!! your delivery boy approval is canceled. For more details contact to the admin. Any query visit.";
         } else {
-            var sms = "Profile Approved : Congratulation, we checked your profile and approve. Now you are a delivery boy of Crowd.";
+            var sms = "Profile Approved : Congratulation, we checked your profile and approve. Now you are a delivery boy of Hardwarechacha.";
         }
         const data = {
             status: pra

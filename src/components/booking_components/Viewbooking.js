@@ -32,7 +32,7 @@ export default class Viewbooking extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'View Booking Details: Admin Dashboard - Crowd';
+        document.title = 'View Booking Details: Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
         setTimeout(() => {
             document.getElementById("global-loader").style.display = "none";
@@ -123,7 +123,7 @@ export default class Viewbooking extends Component {
             var sms = "Out for Delivery : Hi " + this.state.userDetails.name + ", Your order will bo delivered today. Our delivery boy Mr." + this.state.deliveryBoy.name + ", Contact number " + this.state.deliveryBoy.phone + " will deliver your order.";
             var subject = 'Out for Delivery';
         } else if (status == 4) {
-            var sms = "Delivered : Thank you for ordering with Crowd, we are delighted to inform you that your order has been successfully delivered. Please check name quantity and expiry of your items and in case of any issue or item missing or wrong item please contact to us.";
+            var sms = "Delivered : Thank you for ordering with Hardwarechacha, we are delighted to inform you that your order has been successfully delivered. Please check name quantity and expiry of your items and in case of any issue or item missing or wrong item please contact to us.";
             var subject = 'Order Delivered';
         } else if (status == 7) {
             var sms = "Out for Pickup : Hi " + this.state.userDetails.name + ",  Your return items pickup today. Our delivery boy Mr." + this.state.returnBoy.name + ", Contact number " + this.state.returnBoy.phone + " will receive your order.";
@@ -584,8 +584,6 @@ export default class Viewbooking extends Component {
                                         <div className="col-xl-4 col-12 offset-xl-8">
                                             <p className="text-right mt-3 font-weight-600">Sub-total: ₹{(parseInt(this.state.bookingDetails.productSellingPrice)) * parseInt(this.state.bookingDetails.qty)}</p>
                                             <p className="text-right mt-3 font-weight-600">Coupon Discount: ₹{parseInt(this.state.bookingDetails.couponDiscount)}</p>
-                                            <p className="text-right mt-3 font-weight-600">Crowd Money: ₹{parseInt(this.state.bookingDetails.walletAmount)}</p>
-                                            <p className="text-right mt-3 font-weight-600">Crowd Rewards: ₹{parseInt(this.state.bookingDetails.walletPoint)}</p>
                                             <p className="text-right mt-3 font-weight-600">Delivery Charge: ₹{parseInt(this.state.bookingDetails.deliveryCharge)}</p>
 
                                             <hr />

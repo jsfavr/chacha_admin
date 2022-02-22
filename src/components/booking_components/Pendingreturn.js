@@ -19,7 +19,7 @@ export default class Pendingreturn extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'Pending Return Booking : Admin Dashboard - Crowd';
+        document.title = 'Pending Return Booking : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
         setTimeout(() => {
             document.getElementById("global-loader").style.display = "none";

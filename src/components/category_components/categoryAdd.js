@@ -42,7 +42,7 @@ class categoryAdd extends Component {
     // }  
     };
     componentDidMount(){
-        document.title = 'Category Add : Admin Dashboard - Crowd';
+        document.title = 'Category Add : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

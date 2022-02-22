@@ -23,7 +23,7 @@ export default class Inventory extends Component {
         }
       }
       componentDidMount(){
-        document.title = 'Inventory Report : Admin Dashboard - Crowd';
+        document.title = 'Inventory Report : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";

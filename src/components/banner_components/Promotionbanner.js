@@ -17,7 +17,7 @@ export default class Promotionbanner extends Component {
         }
       }
       componentDidMount(){
-        document.title = 'Promotion Banner : Admin Dashboard - Crowd';
+        document.title = 'Promotion Banner : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
         setTimeout(()=>{
           document.getElementById("global-loader").style.display = "none";

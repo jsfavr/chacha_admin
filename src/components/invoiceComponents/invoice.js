@@ -31,13 +31,14 @@ export default class invoice extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'Billing Invoice : Admin Dashboard - Crowd';
+        document.title = 'Billing Invoice : Admin Dashboard - HardwareChacha';
         document.getElementById("global-loader").style.display = "block";
         setTimeout(() => {
             document.getElementById("global-loader").style.display = "none";
         }, 500)
         get('/booking/InvoiceBookingDetails/' + this.state.get_id)
             .then(res => {
+                console.log(res)
                 this.setState({
                     billingAddress: res.data.billingAddress,
                     productDetail: res.data.productArray,
@@ -237,11 +238,11 @@ export default class invoice extends Component {
 
                                                                     <tr>
                                                                         <td style={{ fontSize: "12px" }}>
-                                                                            <b style={{ color: "black" }}> Registered Address </b>: Crowd,<br />
+                                                                            <b style={{ color: "black" }}> Registered Address </b>: HardwareChacha,<br />
 
-                                                                             Kanthalberia, Newtown, Kolkata, <br />
-                                                                             South 24 Pargana, West Bengal, India-700135<br />
-                                                                        Email: customercare@crowdindia.co.in, Phone: +91 9748737396
+                                                                            Panchwati Tower, Barbil Joda Highway, <br />
+                                                                            Odisha,Barbil - 758035<br />
+                                                                        Email:infohardwarechacha@gmail.com, Phone:(+91) 7682968868
                                                                         <br />
 
                                                                             <b>Declaration : </b>
@@ -256,8 +257,8 @@ export default class invoice extends Component {
                                                                             <br />
                                                                             <br />
                                                                             <center>
-                                                                                Ordered Through<br />
-                                                                                <img src="/logo/crowd%20logo-01.jpg" height="40px" alt="Crowd" />
+                                                                                Ordered Through: HardwareChacha
+                                             
                                                                             </center>
                                                                         </td>
 
@@ -289,16 +290,11 @@ export default class invoice extends Component {
                             </div>
 
                         </div>
-                        <center>
-                            {/* <Pdf targetRef={this.componentRef} filename="Crowd Tax Invoice.pdf" options={options} x={.5}>
-                                {({ toPdf }) => <a href="javascript:void(0)" className="btn btn-primary" onClick={toPdf}>Download</a>}
-                            </Pdf> */}
-                            {/* <button onClick={this.handleClick}>Click</button> */}
-                                                    
+                        <center>                                            
                         <ReactToPrint
                                         trigger={() =>  <a href="javascript:void(0)" className="btn btn-primary" onClick={this.barcodePrint}>Print</a>}
                                         content={() => this.componentRef}
-                                        documentTitle='Crowd Tax Invoice'
+                                        documentTitle='Hardwarechacha Tax Invoice'
                                         />
                         </center><br /><br />
                     </div>

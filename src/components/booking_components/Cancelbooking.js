@@ -19,7 +19,7 @@ export default class Cancelbooking extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'Cancel Booking : Admin Dashboard - Crowd';
+        document.title = 'Cancel Booking : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
         setTimeout(() => {
             document.getElementById("global-loader").style.display = "none";

@@ -221,7 +221,7 @@ export default class productDetails extends Component {
 
                                 Brand Name : <b>{this.state.brand.brand_name}</b> <br />
                                 Group Name : {this.state.group.group_name} <br />
-  				Country of Origin : <b>{this.state.details.contryOfOrigin}</b><br />
+  				                Country of Origin : <b>{this.state.details.contryOfOrigin}</b><br />
 
                                 Admin Active Status : <b>{
                                     this.state.details.adminActiveStatus == true ? <>YES</> : <>NO</>
@@ -340,7 +340,7 @@ export default class productDetails extends Component {
                     </div>
                 </div>
 
-                <div className="row">
+                {/* <div className="row">
                     <div className="col-md-8 col-xl-8">
                         <div className="card shadow">
                             <div className="card-header">
@@ -421,7 +421,7 @@ export default class productDetails extends Component {
 
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="row">
                     <div className="col-md-12 col-xl-12">
@@ -440,20 +440,6 @@ export default class productDetails extends Component {
                                                 <div className="" style={{ padding: "5px" }} key={i}>
                                                     <img src={process.env.REACT_APP_DEV_URL + '/NWxctXUSLz1Gg/' + object.fields.productImage} height="160px" style={{ padding: "10px" }} />
                                                     <br />
-                                                    {/* <center>
-                                                        {
-                                                            this.state.image.length>1?
-                                                            <a href="javascript:void(0)" onClick={()=>this.imageDelete(object.pk)} className="btn btn-icon btn-pill btn-danger mt-1 mb-1 btn-sm" >
-                                                                <span className="btn-inner--icon">Delete</span>
-                                                            </a>
-                                                            :null
-
-                                                        }
-                                                           
-
-                                                            <br />
-                                                            <br />
-                                                        </center> */}
                                                 </div>
                                             </>
                                         ))

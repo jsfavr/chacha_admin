@@ -31,7 +31,7 @@ export default class BookingDetails extends Component {
         }
     }
     componentDidMount() {
-        document.title = 'View Booking Details: Admin Dashboard - Crowd';
+        document.title = 'View Booking Details: Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
         setTimeout(() => {
             document.getElementById("global-loader").style.display = "none";
@@ -516,8 +516,7 @@ export default class BookingDetails extends Component {
                                         <div className="col-xl-4 col-4">
                                             <p className="text-right mt-3 font-weight-600">Sub-total: ₹{parseInt(this.state.bookingArray.productSellingPrice)}</p>
                                             <p className="text-right mt-3 font-weight-600">Coupon Discount: ₹{parseInt(this.state.bookingArray.couponDiscount)}</p>
-                                            <p className="text-right mt-3 font-weight-600">Crowd Money: ₹{parseInt(this.state.bookingArray.walletAmount)}</p>
-                                            <p className="text-right mt-3 font-weight-600">Crowd Rewards: ₹{parseInt(this.state.bookingArray.walletPoint)}</p>
+                                            
                                             <p className="text-right mt-3 font-weight-600">Delivery Charge: ₹{parseInt(this.state.bookingArray.deliveryCharge)}</p>
 
                                             <hr />

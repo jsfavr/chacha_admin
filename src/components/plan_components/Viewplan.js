@@ -9,7 +9,7 @@ export default class Viewplan extends Component {
         }
     }
     componentDidMount(){
-        document.title = 'Power Plan : Admin Dashboard - Crowd';
+        document.title = 'Power Plan : Admin Dashboard - Hardwarechacha';
         document.getElementById("global-loader").style.display = "block";
 	 	setTimeout(()=>{
 			document.getElementById("global-loader").style.display = "none";
