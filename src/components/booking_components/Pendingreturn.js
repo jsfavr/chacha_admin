@@ -131,7 +131,7 @@ export default class Pendingreturn extends Component {
                         <div className="card shadow">
                             <div className="card-header">
                                 <h2 className="mb-0">Pending Return Booking</h2>
-                                {/* <div
+                                <div
                                     style={{
                                         float: "right",
                                         marginBottom: "13px",
@@ -144,7 +144,7 @@ export default class Pendingreturn extends Component {
                                         searchText={this.state.searchitem}
                                         classNames="test-class"
                                     />
-                                </div> */}
+                                </div>
                             </div>
                             <div className="card-body">
                                 <div className="table-responsive">

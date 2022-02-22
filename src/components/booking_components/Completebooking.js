@@ -27,6 +27,7 @@ export default class Completebooking extends Component {
         }, 500)
         get('/booking/adminBooking/2')
             .then(res => {
+                console.log(res)
                 var tdata = res.data.filter(e => e.bookingDetails.orderStatus == 4)
                 var slice = tdata.slice(this.state.offset, this.state.offset + this.state.perPage)
                 this.setState({
@@ -134,7 +135,7 @@ export default class Completebooking extends Component {
                         <div className="card shadow">
                             <div className="card-header">
                                 <h2 className="mb-0">Complete Booking</h2>
-                                {/* <div
+                                <div
                                     style={{
                                         float: "right",
                                         marginBottom: "13px",
@@ -147,7 +148,7 @@ export default class Completebooking extends Component {
                                         searchText={this.state.searchitem}
                                         classNames="test-class"
                                     />
-                                </div> */}
+                                </div>
                             </div>
                             <div className="card-body">
                                 <div className="table-responsive">
@@ -178,6 +179,7 @@ export default class Completebooking extends Component {
                                                     Payble <br />
                                                  Price
                                              </th>
+                                            
                                                 <th>
                                                     More <br />
                                                  Details
