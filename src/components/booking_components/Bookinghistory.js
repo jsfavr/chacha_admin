@@ -42,8 +42,8 @@ export default class Bookinghistory extends Component {
                         })}
                     </td>
                     <td>{obj.bookingPayment.grandTotal}</td>
-                    <td>{obj.bookingPayment.walletAmount}</td>
-                    <td>{obj.bookingPayment.walletPoint}</td>
+                    {/* <td>{obj.bookingPayment.walletAmount}</td>
+                    <td>{obj.bookingPayment.walletPoint}</td> */}
                     <td>{obj.bookingPayment.couponDiscount}</td>
                     <td>{obj.bookingPayment.deliveryCharge}</td>
                 </tr>

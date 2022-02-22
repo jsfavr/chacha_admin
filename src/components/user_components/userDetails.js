@@ -375,7 +375,7 @@ export default class userDetails extends Component {
                     </ol>
                 </div>
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-12">
                         <div class="card shadow">
                             <div class="card-header">
                                 <h2 class="mb-0">Personal Details</h2>
@@ -385,7 +385,7 @@ export default class userDetails extends Component {
                                 <span>Name : {this.state.userArr.name}</span><br />
                                 <span>Email ID : {this.state.userArr.email}</span><br />
                                 <span>Phone Number : {this.state.userArr.phone}</span><br />
-                                <span>Referral Code : <b>{this.state.userArr.referCode}<MdContentCopy style={{ cursor: "pointer" }} onClick={() => this.handleCopy(this.state.userArr.referCode)} /></b></span><br />
+                                {/* <span>Referral Code : <b>{this.state.userArr.referCode}<MdContentCopy style={{ cursor: "pointer" }} onClick={() => this.handleCopy(this.state.userArr.referCode)} /></b></span><br />
                                 <span>Total Refer : {this.state.referArr.length} Refer</span><br />
                                 <span>Power Status : <b>
                                     {
@@ -398,7 +398,7 @@ export default class userDetails extends Component {
                                 </span><br />
                                 <span>Power Price : {this.state.userArr.price}/-</span><br />
                                 <span>Power Order ID : {this.state.userArr.orderID}</span><br />
-                                <span>Power Transaction ID : {this.state.userArr.transID}</span><br />
+                                <span>Power Transaction ID : {this.state.userArr.transID}</span><br /> */}
                             </div>
                         </div>
 
@@ -442,7 +442,7 @@ export default class userDetails extends Component {
 
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    {/* <div class="col-xl-4">
                         <div class="card shadow">
                             <div class="card-header">
                                 <h2 class="mb-0">Referrer Details</h2>
@@ -628,7 +628,7 @@ export default class userDetails extends Component {
 
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
 
                 </div>

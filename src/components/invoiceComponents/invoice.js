@@ -206,13 +206,13 @@ export default class invoice extends Component {
                                                                                     <td>{obj.qty}</td>
 
                                                                                     <td>
-                                                                                        {parseInt(obj.productSellingPrice) + parseInt(obj.productGST)}<br />
+                                                                                        {parseInt(obj.productSellingPrice) - parseInt(obj.productGST)}<br />
                                                                                         <br />
                                                                                     </td>
 
                                                                                     <td> {parseInt(obj.productSellingPrice)}<br /></td>
                                                                                     <td> {parseInt(obj.productGST)}<br /></td>
-                                                                                    <td class="text-right">₹{(parseInt(obj.productSellingPrice) + parseInt(obj.productGST)) * parseInt(obj.qty)}<br /></td>
+                                                                                    <td class="text-right">₹{(parseInt(obj.productSellingPrice))* parseInt(obj.qty)}<br /></td>
                                                                                 </tr>
                                                                             )}
                                                                     </tbody>

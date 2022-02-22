@@ -158,9 +158,9 @@ export default class Siderbar extends Component {
                             {/* <li className="slide 11" onClick={()=>this.expended(11)}>
                                 <Link className="side-menu__item"  to="/deliveryReport"><i className="side-menu__icon fe fe-home"></i><span className="side-menu__label">Delivery Report</span></Link>
                             </li> */}
-                            <li className="slide 12" onClick={() => this.expended(12)}>
+                            {/* <li className="slide 12" onClick={() => this.expended(12)}>
                                 <Link className="side-menu__item" to="/inventory"><i className="side-menu__icon fe fe-home"></i><span className="side-menu__label">Inventory Details</span></Link>
-                            </li>
+                            </li> */}
                             <li className="slide 13" onClick={() => this.expended(13)}>
                                 <Link className="side-menu__item" to="/salesreport"><i className="side-menu__icon fe fe-file-text"></i><span className="side-menu__label">Sales Report</span></Link>
                             </li>

@@ -114,14 +114,14 @@ export default class Viewuser extends Component {
           <td>{obj.name}</td>
           <td>{obj.email}</td>
           <td>{obj.phone}</td>
-          <td>
+          {/* <td>
             {obj.subscriptionType == true ?
               <span className="badge badge-primary">{obj.totalRefer} Refer</span>
               :
               <span className="badge badge-danger">NO Power</span>
             }
 
-          </td>
+          </td> */}
           <td>
 
             <Link to={"/userDetails?id=" + obj.id + "&name=" + obj.name} className="btn btn-primary btn-sm">View Details</Link>
@@ -188,7 +188,7 @@ export default class Viewuser extends Component {
                         <th className="wd-15p">Name</th>
                         <th className="wd-20p">Email</th>
                         <th className="wd-15p">Phone</th>
-                        <th className="wd-15p">Refer /<br />Power<br /></th>
+                        {/* <th className="wd-15p">Refer /<br />Power<br /></th> */}
                         <th className="wd-15p">Action</th>
                         <th className="wd-10p">Block /<br />Unblock</th>
                       </tr>
