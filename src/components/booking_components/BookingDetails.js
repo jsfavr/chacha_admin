@@ -42,7 +42,7 @@ export default class BookingDetails extends Component {
     getData = () => {
         console.log('getData')
         console.log(this.state.BookingStatus)
-        get('/booking/newBookingDetails/' + this.state.get_id + '/' + this.state.BookingStatus)
+        get('/booking/newBookingDetails/' + this.state.get_id + '/' + 0)
             .then(res => {
                 this.setState({
                     billingAddress: res.data.billingAddress,
