@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { get, withoutauthpatch, post } from "../../utils/service";
+import { get, withoutauthpatch, post, patch } from "../../utils/service";
 import queryString from "query-string";
 import Moment from "moment";
 import "react-responsive-modal/styles.css";
@@ -234,18 +234,29 @@ export default class BookingDetails extends Component {
       reasonType: type,
     });
   };
-  payVendor = (comment, id, amount) => {
+  payVendor = (comment, id, amount,booking_id) => {
     const data = {
       remarks: comment,
       user_id: id,
       reddemPrice: amount,
       order_status: 2,
     };
-    console.log(data)
+
+    console.log(data);
     post("/wallet/getwithdraw/", data)
       .then((res) => {
-        console.log(res);
-        toast.success("Vendor Wallet Balance added successfully");
+        if(res){
+          const data = {
+            vendor_paid_status:1
+          }
+          patch(`/booking/submit/${booking_id}`,data)
+          .then(res=>{
+            this.getData()
+            toast.success("Vendor Wallet Balance added successfully");
+          }).catch((err) => {
+            console.log(err);
+          });
+        }
       })
       .catch((err) => {
         console.log(err);
@@ -419,25 +430,34 @@ export default class BookingDetails extends Component {
                                     {obj.admin_com * parseInt(obj.qty)}
                                   </span>
                                   <br />
-                                  <button
-                                    className="btn btn-info btn-sm text-white"
-                                    onClick={() =>
-                                      this.payVendor(
-                                        "Order Payment",
-                                        obj.vendor_id,
-                                        Math.round(obj.productSellingPrice) *
-                                          parseInt(obj.qty) -
-                                          Math.round(obj.admin_com) *
-                                            parseInt(obj.qty)
-                                      )
-                                    }
-                                  >
-                                    Credit to Vendor &#8377;
-                                    {Math.round(obj.productSellingPrice) *
-                                      parseInt(obj.qty) -
-                                      Math.round(obj.admin_com) *
-                                        parseInt(obj.qty)}
-                                  </button>
+                                  {obj.vendor_paid_status ? (
+                                    <>
+                                      <span className="badge badge-primary">
+                                        vendor payment done
+                                      </span>
+                                    </>
+                                  ) : (
+                                    <button
+                                      className="btn btn-info btn-sm text-white"
+                                      onClick={() =>
+                                        this.payVendor(
+                                          "Order Payment",
+                                          obj.vendor_id,
+                                          Math.round(obj.productSellingPrice) *
+                                            parseInt(obj.qty) -
+                                            Math.round(obj.admin_com) *
+                                              parseInt(obj.qty),
+                                          obj.booking_id
+                                        )
+                                      }
+                                    >
+                                      Credit to Vendor &#8377;
+                                      {Math.round(obj.productSellingPrice) *
+                                        parseInt(obj.qty) -
+                                        Math.round(obj.admin_com) *
+                                          parseInt(obj.qty)}
+                                    </button>
+                                  )}
 
                                   {/* <button className="btn btn-info btn-sm text-white"
                                         onClick={() =>
