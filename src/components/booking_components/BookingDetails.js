@@ -234,6 +234,18 @@ export default class BookingDetails extends Component {
       reasonType: type,
     });
   };
+  payCustomer =(booking_id) =>{
+    const data = {
+      customer_paid_status:1
+    }
+    patch(`/booking/submit/${booking_id}`,data)
+    .then(res=>{
+      this.getData()
+      toast.success("Customer Paid successfully");
+    }).catch((err) => {
+      console.log(err);
+    });
+  }
   payVendor = (comment, id, amount,booking_id) => {
     const data = {
       remarks: comment,
@@ -388,10 +400,18 @@ export default class BookingDetails extends Component {
                               <th className="text-right">Amount(RS)</th>
 
                               {/* <th>Action</th> */}
+                              {this.state.BookingStatus== 2 &&
                               <th>
-                                PayTo <br />
-                                Vendor
-                              </th>
+                              PayTo <br />
+                              Vendor
+                            </th>
+                              }
+                               {this.state.BookingStatus== 5 &&
+                              <th>
+                              PayTo <br />
+                              Customer
+                            </th>
+                              }
                               <th>Status</th>
                             </tr>
                           </thead>
@@ -424,7 +444,8 @@ export default class BookingDetails extends Component {
                                   {Math.round(obj.productSellingPrice) *
                                     parseInt(obj.qty)}
                                 </td>
-                                <td>
+                                {this.state.BookingStatus== 2 && 
+                                  <td>
                                   <span>
                                     Commession: &#8377;
                                     {obj.admin_com * parseInt(obj.qty)}
@@ -467,6 +488,35 @@ export default class BookingDetails extends Component {
                                           )
                                         }> Debit vendor</button> */}
                                 </td>
+                                }
+                               {this.state.BookingStatus== 5 && 
+                                  <td>
+                                
+                                  {obj.customer_paid_status ? (
+                                    <>
+                                      <span className="badge badge-primary">
+                                        Customer payment done
+                                      </span>
+                                    </>
+                                  ) : (
+                                    <button
+                                      className="btn btn-info btn-sm text-white"
+                                      onClick={() =>
+                                        this.payCustomer(
+                                          obj.booking_id
+                                        )
+                                      }
+                                    >
+                                      Pay to Customer &#8377;
+                                      {Math.round(obj.productSellingPrice) *
+                                        parseInt(obj.qty)}
+                                    </button>
+                                  )}
+
+                                 
+                                </td>
+                                }
+                              
                                 <td className="text-center">
                                   {obj.orderStatus == 1 ? (
                                     <>
